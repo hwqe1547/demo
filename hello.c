@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+	int i;
+	scanf("%d", &i);
+	int j = i;
+
+	int a=1;
+	for (int x = 1;x < i;x++) {
+		a*=10;
+	}
+	int k=a;
+	int end = a * 10;
+	for (k = a;k < end;k++) {
+		int sum = 0;
+		int m = k;
+		int j = i;
+		for (j = i;j > 0;j--) {
+			int n = m % 10;
+			m /= 10;
+			int l = i;
+			int p = 1;
+			for (l = i;l > 0;l--) {
+				p *= n;
+			}
+			sum += p;
+		}
+		if (sum == k) {
+			printf("%d\n", k);
+		}
+	}
+
+	
+
+	
+	
+	return 0;
+}
