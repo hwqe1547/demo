@@ -3,7 +3,7 @@
 int main()
 {
 	int i;
-	scanf_s("%d", &i);
+	scanf("%d", &i);
 	int j = i;
 
 	int a=1;
